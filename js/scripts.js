@@ -1,22 +1,25 @@
 // business logic
-function add(number1, number2) {
-  return number1 + number2;
+function add(num1, num2) {
+  return num1 + num2;
 }
 
-function subt(number1, number2) {
-  return number1 - number2;
+function subt(num1, num2) {
+  return num1 - num2;
 }
 
-function multi(number1, number2) {
-  return number1 * number2;
+function multi(num1, num2) {
+  return num1 * num2;
 }
 
-function divide(number1, number2) {
-  return number1 / number2;
+function divide(num1, num2) {
+  return num1 / num2;
 }
 
 // user interface logic 
-const number1 = parseInt(prompt("Enter a number:"));
-const number2 = parseInt(prompt("Enter another number:"));
+const num1 = parseInt(prompt("Enter a number:"));
+const num2 = parseInt(prompt("Enter another number:"));
 
-window.alert(number1 + " + " + number2 + " = " + add(number1, number2) + " and " + "\n" + number1 + " - " + number2 + " = " + subt(number1, number2) + " and " + "\n" + number1 + " * " + number2 + " = " + multi(number1, number2) + " and " + "\n" + number1 + " / " + number2 + " = " + divide(number1, number2));
+window.alert(num1 + " + " + num2 + " = " + add(num1, num2) + "\n" + 
+  num1 + " - " + num2 + " = " + subt(num1, num2) + "\n" + 
+  num1 + " * " + num2 + " = " + multi(num1, num2) + "\n" + 
+  num1 + " / " + num2 + " = " + divide(num1, num2));
