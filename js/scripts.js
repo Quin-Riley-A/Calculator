@@ -3,8 +3,26 @@ function add(number1, number2) {
   return number1 + number2;
 }
 
-// user interface logic 
-const number1 = prompt("Enter a number:");
-const number2 = prompt("Enter another number:");
+function subt(number1, number2) {
+  return number1 - number2;
+}
 
-window.alert(add(number1, number2));
+function multi(number1, number2) {
+  return number1 * number2;
+}
+
+function divide(number1, number2) {
+  return number1 / number2;
+}
+
+// user interface logic 
+const number1 = parseInt(prompt("Enter a number:"));
+const number2 = parseInt(prompt("Enter another number:"));
+
+window.alert("The addition of your numbers equals: " + add(number1, number2));
+
+window.alert("The subtraction of your numbers equals: " + subt(number1, number2));
+
+window.alert("The multiplication of your numbers equals: " + multi(number1, number2));
+
+window.alert("The division of your numbers equals: " + divide(number1, number2));
